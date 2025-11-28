@@ -10,3 +10,11 @@ const server = http.createServer((req, res) => {
 server.listen(PORT, "0.0.0.0", () => {
   console.log(`Server running on port ${PORT}`);
 });
+
+// src/feature.js
+function foo() {
+  return { value: "foo", timestamp: new Date().toISOString() };
+}
+
+module.exports = { foo };
+
